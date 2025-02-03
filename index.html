@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- OWN CSS -->
+     <link rel="stylesheet" href="style.css/style.css">
+
+</head>
+<body>
+    <!-- HEADER -->
+     <header>
+        <!-- NAV -->
+        <nav class="bg-[#FFF9F4]">
+          <div class="sora-font flex items-center justify-between sm:max-w-screen-sm px-4 lg:max-w-screen-xl mx-auto py-5 text-sm lg:text-xl text-[#111111]">
+            <div class="flex items-center gap-x-5">
+              <img src="assets/logo-header.png" alt="">
+              <p class="text-2xl huppish">Browse<span class="text-[#FFDC26]">4</span>Pets</p>
+            </div>
+            <div class="huppish">
+              <ul class="flex items-center gap-x-5">
+                <li><a href="">Find a pet</a></li>
+                <li><a href=""></a>Breeds</li>
+                <li><a href=""></a>Contact us</li>
+              </ul>
+            </div>
+            <div class="huppish">
+              <div class="flex items-center gap-x-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>           
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>            
+                <button class="border rounded-lg border-solid border-[#FFDC26] px-8 py-2">Login</button>
+                <button class="bg-[#FFDC26] rounded-lg px-8 py-2">Register</button>
+              </div>
+            </div>
+            <div class="svg-huppish">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </div>
+          </div>
+        </nav>
+        <!-- NAV ENDED -->
+        
+        <!-- BANNER START -->
+          <div class="lg:flex lg:flex-col lg:max-w-screen-xl mx-auto bg-[url(assets/cat-big.png)] bg-contain bg-no-repeat bg-right-bottom sm:max-w-screen-sm px-4">
+            <div class="sora-font text-base lg:text-2xl my-20">
+              <h1 class="adlam-display-regular text-3xl lg:text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+              <p class="my-3">Discover a world of treats, <br> toys, and essentials handpicked for your furry <br> friends. Shop now and make tails wag <br> with joy!</p>
+              <button class="bg-[#FFDC26] rounded-lg px-8 py-2 mb-36">Find a pet</button>
+            </div>
+          </div>
+          <!-- BANNER END -->
+     </header>
+     <!-- MAIN -->
+      <main>
+      <!-- CATAGORY -->
+        <div class="adlam-display-regular sm:max-w-screen-sm px-4 lg:max-w-screen-xl mx-auto mb-20">
+          <h3 class="text-2xl lg:text-4xl py-8">Browse By Categories</h3>
+          <div class="grid grid-cols-2 lg:grid-cols-6 gap-3">
+            <div class="bg-[#F9DF8A] py-12 flex flex-col items-center rounded-lg">
+              <img class="rounded-[50%] p-3 bg-[#FFFFFF] mb-4" src="assets/dog-cartoon.png" alt="">
+              <h4 class="text-base lg:text-xl">Dog</h4>
+              <p class="text-xs lg:text-base">3 items</p>
+            </div>
+            <div class="bg-[#F9DF8A] py-12 flex flex-col items-center rounded-lg">
+              <img class="rounded-[50%] p-3 bg-[#FFFFFF] mb-4" src="assets/fish-cartoon.png" alt="">
+              <h4 class="text-base lg:text-xl">Fish</h4>
+              <p class="text-xs lg:text-base">3 items</p>
+            </div>
+            <div class="bg-[#F9DF8A] py-12 flex flex-col items-center rounded-lg">
+              <img class="rounded-[50%] p-3 bg-[#FFFFFF] mb-4" src="assets/cat-cartoon.png" alt="">
+              <h4 class="text-base lg:text-xl">Cat</h4>
+              <p class="text-xs lg:text-base">3 items</p>
+            </div>
+            <div class="bg-[#F9DF8A] py-12 flex flex-col items-center rounded-lg">
+              <img class="rounded-[50%] p-3 bg-[#FFFFFF] mb-4" src="assets/bird-cartoon.png" alt="">
+              <h4 class="text-base lg:text-xl">Birds</h4>
+              <p class="text-xs lg:text-base">3 items</p>
+            </div>
+            <div class="bg-[#F9DF8A] py-12 flex flex-col items-center rounded-lg">
+              <img class="rounded-[50%] p-3 bg-[#FFFFFF] mb-4" src="assets/mouse-cartoon.png" alt="">
+              <h4 class="text-base lg:text-xl">Small pet</h4>
+              <p class="text-xs lg:text-base">3 items</p>
+            </div>
+            <div class="bg-[#F9DF8A] py-12 flex flex-col items-center rounded-lg">
+              <img class="rounded-[50%] px-3 py-2 bg-[#FFFFFF] mb-4" src="assets/rabbit-cartoon.png" alt="">
+              <h4 class="text-base lg:text-xl">Rabit</h4>
+              <p class="text-xs lg:text-base">3 items</p>
+            </div>
+          </div>
+        </div>
+        <!-- TRENDING -->
+        <section class="bg-[#FFF9F4]">
+          <div class="adlam-display-regular sm:max-w-screen-sm px-4 lg:max-w-screen-xl mx-auto pb-20">
+            <h3 class="text-2xl lg:text-4xl py-8">Trending Pet Products</h3>
+            <div class="flex flex-col lg:flex-row lg:justify-between gap-5">
+              <div class="bg-[#F9DF8A] rounded-lg py-10 px-10 lg:w-2/5">
+                <div>
+                  <h3 class="text-2xl lg:text-4xl pt-8 pb-4">T-Shirt for Dogs</h3>
+                  <p class="sora-font text-xs lg:text-base pb-4">Discover a world of treats, <br> toys, and essentials handpicked for</p>
+                </div>
+                <div class="flex items-start">
+                  <button class="bg-[#FFF] rounded-lg px-3 py-2 mb-20 grow">Shop Now</button>
+                <img class="w-2/5" src="assets/cute-pet-mid.png" alt="">
+                </div>
+              </div>
+              
+              <!-- Trending card container -->
+              <div class="grow grid grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md">
+                  <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                  <div>
+                    <div class="flex items-center text-xs lg:text-base">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                 
+                      <p>4.5</p>
+                    </div>
+                    <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                    <p class="text-xs lg:text-base">$39.99</p>
+                  </div>
+                </div>
+                <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md">
+                  <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                  <div>
+                    <div class="flex items-center text-xs lg:text-base">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                 
+                      <p>4.5</p>
+                    </div>
+                    <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                    <p class="text-xs lg:text-base">$39.99</p>
+                  </div>
+                </div>
+                <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md">
+                  <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                  <div>
+                    <div class="flex items-center text-xs lg:text-base">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                 
+                      <p>4.5</p>
+                    </div>
+                    <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                    <p class="text-xs lg:text-base">$39.99</p>
+                  </div>
+                </div>
+                <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md">
+                  <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                  <div>
+                    <div class="flex items-center text-xs lg:text-base">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                 
+                      <p>4.5</p>
+                    </div>
+                    <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                    <p class="text-xs lg:text-base">$39.99</p>
+                  </div>
+                </div>
+                <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md">
+                  <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                  <div>
+                    <div class="flex items-center text-xs lg:text-base">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                 
+                      <p>4.5</p>
+                    </div>
+                    <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                    <p class="text-xs lg:text-base">$39.99</p>
+                  </div>
+                </div>
+                <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md">
+                  <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                  <div>
+                    <div class="flex items-center text-xs lg:text-base">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                 
+                      <p>4.5</p>
+                    </div>
+                    <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                    <p class="text-xs lg:text-base">$39.99</p>
+                  </div>
+                </div>
+                <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md">
+                  <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                  <div>
+                    <div class="flex items-center text-xs lg:text-base">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                 
+                      <p>4.5</p>
+                    </div>
+                    <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                    <p class="text-xs lg:text-base">$39.99</p>
+                  </div>
+                </div>
+                <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md">
+                  <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                  <div>
+                    <div class="flex items-center text-xs lg:text-base">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                        <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                      </svg>                 
+                      <p>4.5</p>
+                    </div>
+                    <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                    <p class="text-xs lg:text-base">$39.99</p>
+                  </div>
+                </div>
+                <div class="huppish">
+                  <div class="flex items-center bg-[#FFF] gap-3 border border-solid border-black/[.1] rounded-md h-full">
+                    <img class="m-2 w-2/5 rounded-lg bg-[#FFF9F4]" src="assets/dog-cartoon.png" alt="">
+                    <div>
+                      <div class="flex items-center text-xs lg:text-base">
+                        <svg class="huppish" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FFC107" class="size-6">
+                          <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+                        </svg>                 
+                        <p>4.5</p>
+                      </div>
+                      <h5 class="text-xs lg:text-xl">Pet Bed</h5>
+                      <p class="text-xs lg:text-base">$39.99</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- LOW PRICE items-center -->
+
+        <section class="adlam-display-regular sm:max-w-screen-sm px-4 lg:max-w-screen-xl mx-auto pb-20">
+          <h3 class="text-2xl lg:text-4xl py-8">Everyday low Price</h3>
+
+          <div class="grid grid-cols-2 lg:grid-cols-5 gap-5">
+            
+            <div class="col-span-2 lg:col-span-3 bg-gradient-to-tl from-[#ACD2FD] to-[#F8CCFB] rounded-xl flex items-start lg:items-center">
+              <div class="grid grid-cols-1 lg:flex-grow">
+                <p class="lg:pt-5 lg:text-xl pl-4 lg:pl-8 huppish">Under Price</p>
+                <h4 class="text-xl lg:text-4xl py-4 pl-4 lg:pl-8">Pet Grooming Mitt</h4>
+                <p class="text-white lg:text-2xl pl-4 lg:pl-8 huppish">(Easy Hair Removal)</p>
+              <h2 class="text-2xl lg:text-6xl pl-4 lg:pl-8 pb-4 lg:text-black text-[#FFF]">$7.99</h2>
+              </div>
+              <img class="mr-2 col-span-2 lg:col-span-1 w-2/5 lg:w-2/4" src="assets/cute-dog-mid.png" alt="">
+
+            </div>
+
+            <div class="col-span-2 lg:col-span-2 bg-gradient-to-tl from-[#F9DF8A] to-[#FFF9F4] rounded-xl">
+              <h4 class="text-xl lg:text-4xl px-8 py-4 ">T-Shirt for Dogs</h4>
+            <div class="grid grid-cols-3">
+              <h2 class="text-2xl lg:text-6xl pl-8 pb-4 text-[#FFDC26] col-span-1">$7.99</h2>
+              <img class="mr-2 lg:pt-12 col-span-2" src="assets/cute-pet-mid.png" alt="">
+              </div>
+          </div>
+          </div>
+
+
+        </section>
+
+
+
+      </main>
+      <!-- FOOTER -->
+       <footer>
+
+       </footer>
+</body>
+</html>

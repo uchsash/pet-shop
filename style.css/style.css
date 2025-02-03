@@ -1,0 +1,30 @@
+/* Google FONTS */
+
+.sora-font {
+    font-family: "Sora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  .adlam-display-regular {
+    font-family: "ADLaM Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .svg-huppish{
+    display: none;
+  }
+
+  @media screen and (max-width:640px) {
+    .huppish{
+      display: none;
+    }
+
+    .svg-huppish{
+      display: block;
+    }
+
+
+  }
+  
