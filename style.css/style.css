@@ -16,6 +16,23 @@
     display: none;
   }
 
+  .typing-effect{
+    display: inline-block;
+  }
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: 
+      typing 1s forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
   @media screen and (max-width:640px) {
     .huppish{
       display: none;
